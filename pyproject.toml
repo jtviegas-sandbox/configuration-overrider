@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "configuration_overrider"
+dist-name = "configuration-overrider"
+author = "jtviegas"
+author-email = "jtviegas.js@gmail.com"
+home-page = "https://github.com/jtviegas/configuration-overrider"
+description-file = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+]
