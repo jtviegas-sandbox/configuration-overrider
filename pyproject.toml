@@ -4,7 +4,7 @@ build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
 requires-python = ">=3.7"
-module = "configuration_resolver.overriders"
+module = "configuration_resolver"
 dist-name = "configuration-overrider"
 author = "jtviegas"
 author-email = "jtviegas.js@gmail.com"
