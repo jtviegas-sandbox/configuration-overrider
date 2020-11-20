@@ -4,13 +4,7 @@ from abc import ABC, abstractmethod
 log = logging.getLogger(__name__)
 
 
-def overrider_impl(clazz):
-    AbstractOverrider.implementations[clazz.__name__] = clazz
-
-
 class AbstractOverrider(ABC):
-
-    _implementations = {}
 
     @staticmethod
     def validate_configuration(keys: list, config: dict):
@@ -22,11 +16,3 @@ class AbstractOverrider(ABC):
     @abstractmethod
     def get(self, key) -> str:
         pass
-
-    @property
-    def implementations(self):
-        return self._implementations
-
-    @staticmethod
-    def factory(name):
-        return AbstractOverrider.implementations[name]()
