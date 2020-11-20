@@ -3,6 +3,7 @@ requires = ["flit_core >=2,<4"]
 build-backend = "flit_core.buildapi"
 
 [tool.flit.metadata]
+requires-python = ">=3.7"
 module = "configuration_overrider"
 dist-name = "configuration-overrider"
 author = "jtviegas"
